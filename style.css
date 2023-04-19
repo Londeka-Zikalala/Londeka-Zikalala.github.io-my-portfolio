@@ -462,4 +462,7 @@ a{
         text-align: center;
 
     }
+    .link a{
+        font-weight: 400;
+    }
 }
