@@ -45,7 +45,7 @@ body{
     .header-p{
     
         margin-left:55%;
-        margin-top:40%;
+        margin-top:35%;
         color: #fef9ef;
         font-size:small;
 
@@ -119,6 +119,7 @@ body{
     .about-p{
         margin-top:0.5%;
         font-weight: 500;
+        font-size: small;
 
     }
     
@@ -133,9 +134,14 @@ body{
     }
     .img3{
         margin-bottom: 2%;
+        padding-right:1em;
     }
+    .img5{
+        padding:1em;
+    }
+
 .img5,.img5-h{
-    margin-top:40%;
+    margin-top:10%;
 }
     h4{
         color:#fef9ef;
@@ -382,5 +388,6 @@ body{
     }
     .link a{
         font-weight: 400;
+        margin-top:25%
     }
 }
