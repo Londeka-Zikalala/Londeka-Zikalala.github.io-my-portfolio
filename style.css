@@ -301,6 +301,7 @@ a{
     margin-top:2.5%;
 }
 }
+
 /*Med and Large*/
 @media only screen and (min-width:36.1em){
     .header{
@@ -409,7 +410,10 @@ a{
     
     .projectimg{
         margin-top:2.5%;
-        display: flex;
+        display: grid;
+        grid-column: span 1/3;
+        grid-row:1/3;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     
     
