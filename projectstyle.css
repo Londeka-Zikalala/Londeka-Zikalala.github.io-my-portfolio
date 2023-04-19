@@ -5,27 +5,110 @@
 *{box-sizing: border-box;
     padding: 0;
     margin: 0;}
+
 body{
     width: 100%;
-    margin: 2.5%;
-    padding: 2.5%;
+    margin: auto;
+    padding: auto;
     font-family:'Mali', cursive;
     font-size: 100%;
     font-weight: 200;
     color:#e9c46a;
     background-image: url(images-and-files/Code-\ by\ neo.jpg);
     background-size: cover;
+
 }
-@media only screen and (max-width:36em) {
-    .front-end-projects, .back-end-projects{
+/*CONTACT ME*/
+.contact{
     width:100%;
+    height:80vh;
+    background-color:darkcyan;
+    margin-top:2.5%;
+    background-image: url(images-and-files/Code-\ by\ neo.jpg);
+    background-size: cover;
+    color: #f4a261;
+}
+.contact-p{
+    font-weight: 500;
+    color: #fef9ef;
+}
+
+form{
+    margin-top: 2.5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.name{
+    margin: 3%;
+    font-weight: 600;
+    
+}
+.email{
+    margin: 3%;
+    font-weight: 600;
+}
+.message{
+    margin: 3%;
+    font-weight: 600;
+}
+.submit{
+    margin-left: 15%;
+    margin-top: 1.5%;
+}
+textarea,input{
+    border-radius: 1em;
+}
+
+/*FOOTER*/
+.footer{
+    width:100%;
+    height:50vh;
+    margin-top:2.5%;
+    text-align: center;
+
+}
+.link a{
+    font-weight: 400;
+    margin-top:25%
+}
+
+/*nav bar*/
+ul, li{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    border: solid transparent;
+    margin-top: 0em;
+    margin-left:0%;
+}
+    .links{
+        margin: 1.5em;
+    }
+    
+    a{
+        text-decoration: none;
+        color: #fef9ef;
+    
+    }
+    
+    .links a:hover{
+        color: #f4a261;
+        transition:0.25s;
+        font-weight: bolder ;
+    }
+ /*SMALL SCREEN*/
+
+@media only screen and (max-width:36em) {
+    /*SECTIONS*/
+    .front-end-projects, .back-end-projects{
+    width:90%;
     height:100vh;
     margin: 2%;
 }
 .projects-header{
     width: 100%;
     height: 100vh;
-  /*  background-image:url(images-and-files/pexels-negative-space-97077.jpg);*/
+    background-image:url(images-and-files/pexels-negative-space-97077.jpg);
     background-size: cover;
 }
 .tdd{
@@ -42,9 +125,11 @@ h2{
     margin-top: 40%;
 }
 }
+
+/*LARGE SCREENS*/
 @media only screen and (min-width:36.1em){
 .front-end-projects{
-    width:100%;
+    width:90%;
     height:100vh;
     margin: 5%;
 }
@@ -68,8 +153,18 @@ h2{
 h2{
     margin-top: 10%;
 }
+
+/*FLEX ITEMS*/
+
+.img3,.img4,.img5{
+    float: right;
+    padding-right: 1em;
+}
+.content{
+    align-items: center;
+}
 .basic-website,.perfect-pizza,.tdd{
     margin:2.5%;
-    padding: 1%;
+    display:flex;
 }
 }
