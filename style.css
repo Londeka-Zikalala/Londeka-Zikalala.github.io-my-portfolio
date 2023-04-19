@@ -404,8 +404,13 @@ a{
         background-image: url(images-and-files/Code-\ by\ neo.jpg);
         background-size: cover;
         color: #fef9ef;
+        align-items: center;
     }
     
+    .projectimg{
+        margin-top:2.5%;
+        display: flex;
+    }
     
     
     /*contact me*/ 
