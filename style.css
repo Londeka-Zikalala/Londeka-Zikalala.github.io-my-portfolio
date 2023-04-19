@@ -301,8 +301,8 @@ a{
     margin-top:2.5%;
 }
 }
-/*LARGE SCREENS*/
-@media only screen and (min-width:58em){
+/*Med and Large*/
+@media only screen and (min-width:36.1em){
     .header{
         width:100%;
         height:90vh;
