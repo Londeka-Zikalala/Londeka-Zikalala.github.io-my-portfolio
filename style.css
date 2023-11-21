@@ -4,132 +4,349 @@
 
 *{
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+}
+
+html{
+    width: 100%;
+    height: auto;
+    
 }
 
 body{
-    width: 100%;
+    width: 90%;
+    padding:2%;
+    margin: 5%;
     font-family:'Mali', cursive;
     font-size: 100%;
     font-weight: 200;
-    color:#e9c46a;
-    background-color:black;
+    color: #af95be;
+    background-color: #fffff8;
     background-blend-mode: multiply;
 }
-
 .container{
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
+
+.header{
+    width:100%;
+    height:100vh;
+    border: solid transparent;
+    margin-inline: 5%;
+    padding: 2%;
+}
+.intro{
+    display:flex;
+    flex-direction: row;
+    border: solid transparent;
+    border-radius: 50px;
+    height: 80vh;
+    width: fit-content;
+    padding: 20px; 
+    position: relative;
+}
+
+.headerImg{
+    border: solid transparent;
+    border-radius:200px;
+    width: 400px;
+    float: left;
+    margin-right:10px;
+}
+
+.nav-bar{
+    float: left; 
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    padding:2%;
+    border: solid transparent;
+    border-radius: 50px;
+    height:80vh;
+    background-color:  rgba(255, 232, 253, 0.338);
+
+}
+
+.link ul{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top:45;
+    right:0;
+    margin-inline-end: 5%;
+    margin-block: 5%;
+
+}
+.link li{
+    margin: 5%;
+    padding: 1%;
+}
+.header-p{
+    margin-block: 10%;
+}
+
+.about{
+    width:100%;
+    height:100vh;
+   
+}
+
+   
+h1, .about-h2{
+    color:#FF99C8;
+}
+
+.links ul, .links li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    float: none;
+    border: solid transparent;
+    margin-block:20%;
+    align-items:center;
+    margin-inline: 35%;
+ 
+}
+
+  /*LINKS*/
+    
+  a{
+    text-decoration: none;
+    color: #e4c1f9 ;
+    margin: 2%;
+
+
+}
+
+.links a:hover, .link a:hover{
+    color:#FF99C8; 
+    zoom: 120%;
+    transition: 0.1s;
+    font-weight: bolder;
+}
+
+.social-media{
+    position: absolute;
+    border: solid transparent;
+    border-radius: 40px;
+    display: flex;
+    float:right;
+    width:fit-content;
+    bottom: 0;
+    right:0;
+    margin-inline-end: 5%;
+}
+.gitHub,.linkedIn{
+    margin:2%;
+    padding: 1%;
+}
+
+.social-media a:hover{
+    zoom: 110%;
+    transition: 0.5s;
+}
+
+/*ABOUT ME*/
+
+.about{
+    width: 100%;
+    height:150vh;
+    align-items: center;
+    margin-inline: 2%;
+}
+
+.about-h1{
+    padding:1.5%;
+    margin-top:1%;
+    text-align: center;
+
+}
+
+.aboutImg{
+    width:280px;
+    height: 50vh;
+    margin-inline: 35%;
+    border: solid transparent;
+    border-radius: 50px;
+    background-color:#fffff8;
+    display: block;
+} 
+.aboutImage{
+    width:250px;
+}
+.about-content{
+    display: block;
+}
+
+.about-p {
+    border: solid transparent;
+    border-radius: 50px;
+    height: 60vh;
+    width: 70%;
+    padding: 20px; 
+    position: relative;
+    background-color:rgba(255, 232, 253, 0.338);
+    margin-inline: 15%;
+
+} 
+
+h4{
+    color:#fef9ef;
+}
+
+/* PROJECTS */
+.projects{
+    height: 130vh;
+    width:100%;
+    align-items: center;
+    padding: 2%;
+    margin: 2%;
+}
+.projects-header{
+    text-align: center;
+    padding: 2%;
+    background-color: #fffff8;
+    border: solid transparent;
+    border-radius: 100px;
+    width: 300px;
+    margin-inline: 35%;
+    display:block ;
+}
+.projectimg{
+    width:100%;
+    height:auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); 
+    gap:2px;
+    padding: 2%;
+    margin-inline: 1%;
+}
+.img3, .img4 ,.img5 {
+    width: 150px;
+    padding: 1%;
+}
+.projects-avatar{
+    width:150px;
+}
+.img3-h{
+    float: right;
+    overflow: hidden;
+    width:60%;
+    margin-inline:10%;
+    padding: 2%;
+    color: #e4c1f9;
+}
+
+.img4-h{
+    float: right;
+    overflow: hidden;
+    width:60%;
+    margin-inline:10%;
+    padding: 2%;
+    color: #e4c1f9;
+}
+
+.img5-h{
+    float: right;
+    overflow: hidden;
+    width:60%;
+    margin-inline:10%;
+    padding: 2%;
+    color: #e4c1f9;
+}
+
+.basic-website{
+    display:flex;
+    border: solid transparent;
+    border-radius: 50px;
+    background-color: rgba(255, 232, 253, 0.338);
+    flex-wrap: wrap;
+    margin: 1%;
+}
+.perfect-pizza{
+    display:flex;
+    border: solid transparent;
+    border-radius: 50px;
+    background-color: rgba(255, 232, 253, 0.338);
+    flex-wrap: wrap;
+    margin: 1%;
+}
+
+.tdd{
+    display:flex;
+    border: solid transparent;
+    border-radius: 50px;
+    background-color: rgba(255, 232, 253, 0.338);
+    flex-wrap: wrap;
+    margin: 1%;
+}
+
+
+/* CONTACT DETAILS */
+.contact{
+    width: 100%;
+    height: 100vh;
+    margin-top:10%;
+    padding: 5%;
+}
+.contact-content{
+display: flex;
+flex-direction: row;
+}
+.contact-avatar{
+    height: 70vh;
+}
+
+.contact-form{
+    width: 60%;
+    height:70vh;
+    border: solid transparent;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgba(255, 232, 253, 0.338);
+}
+.contact-form input, .contact-form textarea {
+    width: 50%;
+    padding: 10px;
+    margin: 1%;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    margin-inline: 30%;
+}
+.contact-form input[type="submit"] {
+    background-color: #f9f9eb;
+    color:#e4c1f9;
+    width: 25%;
+    padding: 2%;
+    margin-inline: 40%;
+}
+.contact-form input[type="submit"]:hover {
+    background-color:#FF99C8 ;
+}
+
+.contact h1{
+    text-align: center;
+    padding: 2%;
+}
+
+
+
+
+
     /*SMALL SCREENS*/
-
-
 @media only screen and (max-width:39.9em){
     .container{
         width: 100%;
     }
-    /*HEADER*/
-    .header{
-        width:100%;
-        height:100vh;
-        border: solid transparent;
-        background-image: url(images-and-files/LK_ZIKALALA-_HEADSHOT-removebg-preview.png);
-        background-repeat: no-repeat;
-        background-color: black;
-        background-size:100% 100%;
-    }
-    
-   
-    .header-p{
-    
-        margin-left:55%;
-        margin-top:35%;
-        color: #fef9ef;
-        font-size:small;
 
-    }
-    
-    h1{
-        color:#f4a261;
-    }
-    
-    ul,li{
-        display: flex;
-        flex-direction: row;
-        float: none;
-        border: solid transparent;
-        margin-top: 0%;
-        justify-content: space-evenly;
-        align-items: center;
-     
-    }
-    /*LINKS*/
-    
- a{
-        text-decoration: none;
-        font-size:small;
-        color:#fef9ef ;
-        margin: 2%;
-
-    
-    }
-    
-    .links a:hover{
-        color: #f4a261;
-        transition:0.5s;
-        font-weight: bolder;
-    }
-    
-
-    .social-media{
-        display: flex;
-        float:right;
-        width: 20%;
-        margin-top:15%;
-        margin-left: 40%;
-        margin-right: 10%;
-        overflow-block:auto;
-    }
-
-    .social-media a:hover{
-        zoom: 120%;
-        transition: 0.5s;
-    }
-
-    /*ABOUT ME*/
-    
-    .about{
-        width:100%;
-        height:100vh;
-        background-color:darkgray;
-        margin-top:2.5%;
-        padding: 1%;
-        background-image: url(images-and-files/IMG_20190111_162912-darkcyan.png);
-        background-repeat: no-repeat;
-        background-size: 45% 80%;
-        align-items: center;
-    }
-    
-    .about-p,.about-h2{
-        margin-left: 35%;
-    }
-    .about-h2{
-        padding:1.5%;
-        margin-top:1%;
-    }
-    .about-p{
-        margin-top:0.5%;
-        font-weight: 500;
-        font-size: small;
-
-    }
-    
     /*PROJECTS*/
     
     .img3,.img5{
         float:left;
+        max-width: 0.5%;
+        height:auto;
         }
     .img4{
         float:right;
@@ -146,26 +363,16 @@ body{
 .img5,.img5-h{
     margin-top:10%;
 }
-    h4{
-        color:#fef9ef;
-    }
-    
+   
     
    .projects{
        width:100%;
        height:90vh;
-       background-color:darkcyan;
-       margin-top:2.5%;
-       background-image: url(images-and-files/Code-\ by\ neo.jpg);
-       background-size: cover;
-       color: #fef9ef;
-       align-items: center;
    }
    
    .projectimg{
        margin-top:2.5%;
-       display: flex;
-       flex-direction: column;
+       display:grid
    }
    
    
@@ -173,11 +380,7 @@ body{
    .contact{
        width:100%;
        height:60vh;
-       background-color:darkcyan;
-       margin-top:2.5%;
-       background-image: url(images-and-files/Code-\ by\ neo.jpg);
-       background-size: cover;
-       color: #f4a261;
+      
    }
    .contact-p{
        font-weight: 500;
@@ -229,195 +432,22 @@ body{
     .container{
         width:100%;
     }
-    /*HEADER*/
-    .header{
-        width:100%;
-        height:120vh;
-        border: solid transparent;
-        background-image: url(images-and-files/LK_ZIKALALA-_HEADSHOT-removebg-preview.png);
-        background-repeat: no-repeat;
-        background-color: black;
-        background-size:40% 90%;
-    }
-    
-    
-    .header-p{
-        font-size: large;
-        padding-left: 1%;
-        margin-left: 40%;
-        margin-top: 20%;
-        padding-top:3%;
-        padding-bottom:0;
-        color: #e9c46a;
-    }
-    
-    h1{
-        color:#f4a261;
-    }
-    
-    /*LINKS*/
-    ul, li{
-        display: flex;
-        flex-direction: row;
-        float: right;
-        border: solid transparent;
-        margin-top: 0em;
-        margin-left:0%;
-     
-    }
-    
-    .links{
-        margin: 1.5em;
-    }
-    
-    a{
-        text-decoration: none;
-        color: #fef9ef;
-    
-    }
-    
-    .links a:hover{
-        color: #f4a261;
-        transition:0.25s;
-        font-weight: bolder ;
-    }
-    
-    .social-media{
-        display: flex;
-        float:right;
-        margin-top:15%;
-        margin-left: 40%;
-        margin-right: 1%;
-        overflow-block:auto;
-    }
-    .social-media a:hover{
-        zoom: 150%;
-        transition: 0.5s;
-    }
-    .img1{
-        margin-right:0.5%;
-    }
-
-    /*ABOUT ME*/
-    
-    .about{
-        width:100%;
-        height:110vh;
-        background-color:black;
-        margin-top:2.5%;
-        padding: 1%;
-        background-image: url(images-and-files/IMG_20190111_162912-darkcyan.png);
-        background-repeat: no-repeat;
-        background-size: 40% 100%;
-        align-items: center;
-    }
-    
-    .about-p,.about-h2{
-        margin-left: 40%;
-    }
-    .about-h2{
-        padding:2.5%;
-        font-size: x-large;
-    }
-    .about-p{
-        margin-top: 2.5%;
-        font-size: large;
-        font-weight: 500;
-        
-    
-    }
-    .about .link a{
-        margin-top:60%;
-    }
-    /*PROJECTS*/
-    
-    .projects{
-        width:100%;
-        height:200vh;
-        background-color:darkgray;
-        margin-top:2.5%;
-        background-image: url(images-and-files/Code-\ by\ neo.jpg);
-        background-size: cover;
-        align-items: center;
-    }
-    .projects-h2{
-        text-align: center;
-    }
-    .projectimg{
-        display: flex;
-        flex-direction: column;
-        margin: 3%;
-    }
-    .img3 , .img4, .img5{
-        float: left;
-        margin:1%;
-        padding-right:1%;
-    }
-    
-    h4{
-        margin-left:0%;
-        margin-top: 8%;
-        font-weight: 800;
-        font-size: large;
-    }
-    /*CONTACT ME*/ 
-    .contact{
-        width:100%;
-        height:60vh;
-        background-color:darkgray;
-        margin-top:2.5%;
-        background-image: url(images-and-files/Code-\ by\ neo.jpg);
-        background-size: cover;
-        color: #f4a261;
-    }
-    .contact-p{
-        font-weight: 500;
-        color: #fef9ef;
-        text-align: center;
-        margin-top: 2%;
-    }
-    
-    form{
-        margin-top: 5.5%;
-        margin-left: 25%;
-    }
-    .name{
-        margin-top: 2%;
-        margin-right:2%;
-        font-weight: 600;
-        
-    }
-    .email{
-        margin-top: 2%;
-        margin-right:2%;
-        font-weight: 600;
-    }
-    .message{
-        margin-right:8%;
-        margin-top: 3%;
-        font-weight: 600;
-    }
-    
-    .submit{
-        margin-left: 15%;
-        margin-top: 5%;
-    }
-    textarea,input{
-        border-radius: 1em;
-        white-space:nowrap;
-        width: 50%;
-    }
-    
-    /*FOOTER*/
-    .footer{
-        width:100%;
-        height:35vh;
-        margin-top:2.5%;
-        text-align: center;
-
-    }
-     .link a{
-        font-weight: 400;
-        margin-top:60%;
-    }
+   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
