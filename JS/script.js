@@ -21,8 +21,8 @@ document.querySelector(".intro-project-btn").addEventListener("click", () => {
 //JS FOR PROJECTS SECTION
 
 document.addEventListener("DOMContentLoaded", function () {
-    const commonImageUrl = "../images-and-files/projects-illustration.jpg";
-
+    const commonImageUrl = "images-and-files\Projects-illustration.jpg";
+                          
    // Function to set the common image for project images
 function setCommonImage(containerId) {
     const projectContainer = document.getElementById(containerId);
@@ -136,5 +136,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     //event listener for the submit button
     const submit = document.querySelector('.submit-button')
-    submit.addEventListener('click', submitForm)
+    submit.addEventListener('click', function(event) {
+        event.preventDefault(); 
+        submitForm();
+    });
 });
