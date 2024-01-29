@@ -6,31 +6,36 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+  height:auto;
+  width: 100%;
+  font-size: 100%;
+  padding-inline: 5px;
+  margin: 0;
+  font-family:'Mali', cursive;
+  font-weight: 200;
+  background-color: #fffff8;
+  color: #af95be;
 
-body{
-    width:100%;
-    font-family:'Mali', cursive;
-    font-size: 100%;
-    font-weight: 200;
-    color: #af95be;
-    background-color: #fffff8;
-    background-blend-mode: multiply;
-    align-items: center;
-    overflow-x: hidden;
 }
+.container {
+    width:auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(250, 228, 188); */
+  
+  }
 h1,h2,h3,h4{
     font-size:xx-large;
     font-weight: 900;
 }
-.container{
-    width: 90%;
-    padding:10px;
-    margin:5px;
-}
+
 
 .header{
     width:100%;
-    height:100vh;
     border: solid transparent;
     margin-inline: 5%;
     padding: 2%;
@@ -58,7 +63,6 @@ h1,h2,h3,h4{
 /* NAV-BAR */
 .links{
     display: inline-flex;
-    justify-content: space-between;
     padding:2%;
     border: solid transparent;
     width:100% ;
@@ -72,7 +76,9 @@ h1,h2,h3,h4{
 .links ul, .links li{
     list-style: none;
 }
-
+.links li{
+    margin: 2%;
+}
 **************
 
 .header-p{
@@ -358,26 +364,29 @@ flex-direction: row;
 @media only screen and (max-width:39.9em){
   
         .container{
-            max-width:100%;
-        }
-        body{
-            overflow:auto;
+            width:auto;
+            overflow: scroll;
         }
 
     /* Header */
     .header{
         width:100%;
-        height:150vh;
         align-content: center;
     }
     .header-contents{
         display: flex;
         flex-direction: row;
         width:100%;
+        height: 60vh;
+    }
+
+    .intro{
+        height: 40vh;
     }
 
     .headerImg{
-        width: 150px;
+        width: 250px;
+        margin-inline:-70%;
     }
 
     .headerimg{
@@ -401,14 +410,15 @@ flex-direction: row;
 
     .social-media{
         position:static;
-        margin-block: 90%;
-        margin-inline:auto;
+        margin-block:100%;
+        margin-inline-start: -50%;
     }
 
     /* ABOUT */
     .about{
         width:100%;
         height: fit-content;
+        align-items: center;
     }
 
     .about h1{
@@ -419,6 +429,8 @@ flex-direction: row;
     .about-content{
         display: block;
         font-size: small;
+        width:auto;
+        margin-inline:auto;
         
     }
 
@@ -432,11 +444,11 @@ flex-direction: row;
     }
 
     .about-p{
-        width:100%;
+        width:70%;
         height:fit-content;
         float: none;
         border: solid #333 1px ;
-        margin-inline: 10%;
+        margin-inline: 30%;
 
     }
 
