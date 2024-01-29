@@ -109,20 +109,6 @@ h1{
     color:#FF99C8;
 }
 
-.about-link ul{
-    position: absolute;
-    display: inline-flex;
-    top:50;
-    right:0;
-    margin-inline-end: 5%;
-    margin-block: 10%;
-    list-style: none;
-
-}
-.about-link li{
-    margin: 5%;
-    padding: 1%;
-}
   /*LINKS*/
     
   a{
@@ -164,7 +150,7 @@ h1{
 
 .about{
     width: 100%;
-    height:120vh;
+    height:150vh;
     align-items: center;
     margin-inline: 2%;
     font-size: larger;
@@ -195,18 +181,47 @@ h1{
 }
 
 .about-p {
-    border: solid transparent;
     height: 60vh;
     width: 50%;
     padding: 20px; 
     background-color:#fffff8;
+    font-weight: 300;
 } 
+
+.about-p .tech-stack {
+    font-weight: 800;
+}
+.about-p ul {
+    list-style:square;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.about-p li {
+    margin-bottom: 5px;
+}
 
 h4{
     color:#fef9ef;
 }
 .about h1{
     font-size: 100px;
+}
+
+
+.about-link ul{
+    position: absolute;
+    display: inline-flex;
+    top:60;
+    right:0;
+    margin-inline-end: 5%;
+    margin-block: 15%;
+    list-style: none;
+
+}
+.about-link li{
+    margin: 5%;
+    padding: 1%;
 }
 /* PROJECTS */
 .projects{
@@ -339,12 +354,12 @@ flex-direction: row;
 
 .linkedIn-img{
     width:25px;
-    margin-inline: 5%;
+    margin-inline: 10%;
 }
 .footer{
     width:100%;
     margin-inline: 35%;
-    margin-block: 10%;
+    margin-block: 20%;
 }
 
 
