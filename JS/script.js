@@ -21,7 +21,7 @@ document.querySelector(".intro-project-btn").addEventListener("click", () => {
 //JS FOR PROJECTS SECTION
 
 document.addEventListener("DOMContentLoaded", function () {
-    const commonImageUrl = "images-and-files\Projects-illustration.jpg";
+    const commonImageUrl = "./images-and-files/Projects-illustration.jpg";
                           
    // Function to set the common image for project images
 function setCommonImage(containerId) {
