@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    box-sizing: border-box;
+}
 
-html,
 body {
   height:100%;
-  width: 100%;
+  width: 90%;
   font-size: 100%;
-  margin: 0;
+  margin: auto;
   font-family:'Mali', cursive;
   font-weight: 200;
   background-color: #fffff8;
@@ -15,17 +17,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x:hidden;
 
 }
 .container {
     width:auto;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    display: block;
     align-items: center;
     /* background-color: rgb(250, 228, 188); */
   
   }
+
 h1,h2,h3,h4{
     font-size:xx-large;
     font-weight: 900;
@@ -62,6 +66,7 @@ h1,h2,h3,h4{
 /* NAV-BAR */
 .links{
     display: inline-flex;
+    margin-inline: 20%;
     padding:2%;
     border: solid transparent;
     width:100% ;
@@ -221,9 +226,6 @@ h4{
 
 }
 
-.frontend, .full-stack{
-    margin-inline: 15%;
-}
 .projects-header{
     text-align: center;
     background-color: #fffff8;
@@ -231,19 +233,16 @@ h4{
     font-size: larger;
 }
 
-.img3, .img4 ,.img5, .img1,.img2,.img3{
+ .img1,.img2,.img3{
     width: 150px;
     padding: 1%;
-}
-.projects-avatar{
-    width:150px;
 }
 
 
 
 .projectimg {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 2px;
 }
 .project1,.project2,.project3,.project4,.project5,.project6{
@@ -281,7 +280,7 @@ h4{
     display: inline-flex;
     top:20;
     right:0;
-    margin-inline-end: 5%;
+    margin-inline: 45%;
     margin-block: 10%;
     list-style: none;
 
@@ -311,11 +310,9 @@ flex-direction: row;
     width: 60%;
     height:70vh;
     border: solid transparent;
-    border-radius: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 20px;
+    border-radius: 20px;
+    padding: 5%;
+    display: block;
     background-color: rgba(255, 232, 253, 0.338);
 }
 
@@ -323,13 +320,13 @@ flex-direction: row;
     width: 50%;
     padding: 10px;
     margin: 1%;
-    border-radius: 30px;
+    border-radius: 10px;
     border: 1px solid #ccc;
     margin-inline: 30%;
 }
  .submit-button{
-    margin-inline: 38%;
-    width: 35%;
+    margin-inline: 40%;
+    width:max-content;
  }
 
 .contact h1{
@@ -340,12 +337,12 @@ flex-direction: row;
 
 .linkedIn-img{
     width:25px;
-    margin-inline: 40%;
+    margin-inline: 10%;
 }
 .footer{
     width:100%;
-    margin-inline: 50%;
-    margin-block: 50%;
+    margin-inline: 40%;
+    margin-block: 10%;
 }
 
 

@@ -84,14 +84,18 @@ function setCommonImage(containerId) {
     function getProjectDescription(projectId) {
         // Sample descriptions
         const descriptions = {
-            "img1": "Description for project 1",
-            "img2": "Description for project 2",
-            "img3": "Description for project 3",
-            "img4": "Description for project 4",
-            "img5": "Description for project 5",
-            "img6": "Description for project 6",
+            "img1": `A ReactJS app flavored with Node and Express in the backend, fetches some movies from TMDB and allows users to store their favorites. View on 
+            <a href="https://github.com/Londeka-Zikalala/favorite-movies-webapp" target="_blank">GitHub</a> and 
+            <a href="https://github.com/Londeka-Zikalala/favorite-movies-react" target="_blank">gh-pages</a>.`,
+        
+            "img2": `A Hackathon Collaboration utilizing Google AI's Teachable Machine, a Zulu learning app allowing a user to learn Zulu while graded by AI. View
+            <a href="https://github.com/Londeka-Zikalala/pixelGiggles-learning-isiZulu" target="_blank">GitHub Repo Link</a> and 
+            <a href="https://learning-isizulu.onrender.com" target="_blank"> App on Render</a>.`,
+        
+            "img3": `A Task Management App built with TypeScript and ReactJS. View on
+            <a href="https://github.com/Londeka-Zikalala/task-management-app" target="_blank">GitHub</a>.`
         };
-
+        
         return descriptions[projectId] || "No description available.";
     }
 
