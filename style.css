@@ -13,7 +13,7 @@ body {
   font-family:'Mali', cursive;
   font-weight: 200;
   background-color: #fffff8;
-  color: #af95be;
+  color:#333;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,7 +95,7 @@ button {
     padding: 10px 20px; 
     font-size: 16px; 
     background-color: #e1e1d4;
-    color:#b295c3 ; 
+    color:#333 ; 
     border: none; 
     border-radius: 5px; 
     cursor: pointer;
@@ -107,14 +107,14 @@ button {
 
    
 h1{
-    color:#FF99C8;
+    color:#333;
 }
 
   /*LINKS*/
     
   a{
     text-decoration: none;
-    color: #e4c1f9 ;
+    color:#333;
     margin: 2%;
 }
 
@@ -157,7 +157,7 @@ h1{
 
 .aboutImg {
     width: 40%;
-    height: 40vh;
+    height: auto;
     border: solid transparent;
     background-color: #fffff8;
     float: right;
@@ -171,10 +171,11 @@ h1{
 .about-content{
     display: flex;
     flex-direction: row;
+    height: auto
 }
 
 .about-p {
-    height: 60vh;
+    height: auto;
     width: 50%;
     padding: 20px; 
     background-color:#fffff8;
@@ -185,7 +186,7 @@ h1{
     font-weight: 800;
 }
 .about-p ul {
-    list-style:square;
+    list-style-type: style inside;
     margin: 10px 0;
     padding-left: 20px;
 }
@@ -195,7 +196,7 @@ h1{
 }
 
 h4{
-    color:#fef9ef;
+    color:#333;
 }
 .about h1{
     font-size: 100px;
@@ -250,7 +251,7 @@ h4{
     padding: 2%;
 }
 h4{
-    color:#af95be;
+    color:#333;
 }
 
 .projects-h2, .projects h4{
@@ -267,7 +268,7 @@ h4{
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 20px;
-    border: 2px solid #333;
+    border: 2px solid #262020;
     z-index: 1000;
 }
 
@@ -391,11 +392,6 @@ flex-direction: row;
         border-radius: 3px; 
     }
 
-    /* .social-media{
-        position:static;
-        margin-block:100%;
-        margin-inline-start: -50%;
-    } */
 
     .intro{
         height:40vh;
@@ -417,7 +413,7 @@ flex-direction: row;
         justify-content: center;
         font-size: small;
         width:100%;
-        height: fit-content;
+        height: auto;
         margin-inline: 6%;
     }
 
@@ -427,12 +423,12 @@ flex-direction: row;
     }
 
     .aboutImg{
-        height: fit-content;
+        height: auto;
     }
 
     .about-p{
         width:70%;
-        height:fit-content;
+        height:auto;
         float: none;
         border: solid #333 1px ;
         margin-inline: 35%;
